@@ -12,7 +12,10 @@
 	},
 	"dependencies": {
 		"milligram": "latest",
-		"bower": "^1.8.0"
+		"bower": "^1.8.0",
+		"ncp": "^2.0.0",
+		"npm-run-all": "^3.1.2",
+		"rimraf": "^2.5.4"
 
 	},
 	"devDependencies": {
@@ -24,7 +27,7 @@
 		"rimraf": "^2.5.4"
 	},
 	"scripts": {
-		"start": "npm run-s clean build bower && run-p watch serve",
+		"start": "run-s clean build bower && run-p watch serve",
 		"clean": "rimraf dist",
 		"bower": "ncp bower_components dist/lib",
 		"build": "ncp src dist",
