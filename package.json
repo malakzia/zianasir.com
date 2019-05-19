@@ -17,7 +17,6 @@
 		"npm-run-all": "^3.1.2",
 		"onchange": "^3.2.0",
 		"rimraf": "^2.5.4"
-
 	},
 	"devDependencies": {
 		"bower": "^1.8.0",
@@ -28,12 +27,12 @@
 		"rimraf": "^2.5.4"
 	},
 	"scripts": {
-		"start": "run-s clean build bower",
+		"start": "run-s clean build bower && run-p watch",
 		"clean": "rimraf dist",
-		"bower": "",
-		"build": "",
-		"watch": "run-s build",
-		"serve": "",
+		"bower": "ncp bower_components dist/lib",
+		"build": "ncp src dist",
+		"watch": "node index.js",
+		"serve": "browser-sync --no-notify start -s dist -f dist",
 		"test": "run-s clean build bower",
 		"postinstall": "bower i",
 		"prestart": "npm i"
