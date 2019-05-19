@@ -27,7 +27,7 @@
 		"rimraf": "^2.5.4"
 	},
 	"scripts": {
-		"start": "run-s clean build bower",
+		"start": "run-s clean build",
 		"clean": "rimraf dist",
 		"bower": "ncp bower_components dist/lib",
 		"build": "ncp src dist",
