@@ -1,6 +1,6 @@
 {
 	"name": "milligram-starter",
-	"private": "true",
+	"private": "false",
 	"dependencies": {
 		"milligram": "latest",
 		"typeit": "latest"
