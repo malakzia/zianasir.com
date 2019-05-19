@@ -31,7 +31,7 @@
 		"start": "run-s clean build bower && run-p serve",
 		"clean": "rimraf dist",
 		"bower": "",
-		"build": "cp -r src dist",
+		"build": "",
 		"watch": "run-s build",
 		"serve": "",
 		"test": "run-s clean build bower",
