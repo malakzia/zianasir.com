@@ -1,0 +1,37 @@
+.container {
+	max-width: 100%;
+	padding-bottom: 0rem;
+	padding-top: 0rem;
+}
+
+.vertical-center {
+	margin-left: 100px;
+	margin-top: 375px;
+	/* transform: translate(-50%, -50%); */
+}
+
+#home {
+	background: #f4f5f6;
+	padding: 0px !important;
+	height: 100vh;
+	position: relative;
+	max-height: 100vh;
+	min-width: 100vw;
+	box-shadow: #000000;
+}
+
+.thumbnail {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 900;
+}
