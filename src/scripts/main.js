@@ -7,9 +7,9 @@ new TypeIt('#homeTopTypeItElement', {
 		speed: 100,
 		startDelay: 900
 	})
-	.type('Engineer')
+	.type('Doctor')
 	.pause(1000)
 	.delete()
-	.type('Entrepreneur')
+	.type('Judge')
 	.pause(1000)
 	.go();
