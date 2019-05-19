@@ -28,7 +28,7 @@
 		"rimraf": "^2.5.4"
 	},
 	"scripts": {
-		"start": "run-s clean build bower && run-p serve",
+		"start": "run-s clean build bower",
 		"clean": "rimraf dist",
 		"bower": "",
 		"build": "",
