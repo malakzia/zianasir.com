@@ -27,7 +27,7 @@
 		"rimraf": "^2.5.4"
 	},
 	"scripts": {
-		"start": "script/build.sh",
+		"start": "scripts/build.sh",
 		"clean": "rimraf dist",
 		"bower": "ncp bower_components dist/lib",
 		"build": "ncp src dist",
