@@ -28,12 +28,12 @@
 		"rimraf": "^2.5.4"
 	},
 	"scripts": {
-		"start": "run-s clean build bower && run-p watch serve",
+		"start": "run-s clean build bower && run-p serve",
 		"clean": "rimraf dist",
 		"bower": "cp -r bower_components dist/lib",
 		"build": "cp -r src dist",
-		"watch": "onchange src/* -- run-s build",
-		"serve": "browser-sync --no-notify start -s dist -f dist",
+		"watch": "run-s build",
+		"serve": "start -s dist -f dist",
 		"test": "run-s clean build bower",
 		"postinstall": "bower i",
 		"prestart": "npm i"
