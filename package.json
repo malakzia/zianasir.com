@@ -30,7 +30,7 @@
 	"scripts": {
 		"start": "run-s clean build bower && run-p serve",
 		"clean": "rimraf dist",
-		"bower": "cp -r bower_components dist/lib",
+		"bower": "",
 		"build": "cp -r src dist",
 		"watch": "run-s build",
 		"serve": "",
