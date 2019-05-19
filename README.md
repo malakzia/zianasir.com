@@ -1,4 +1,72 @@
-<a align="center" href="http://milligram.github.io"><img width="100%" src="https://milligram.github.io/images/thumbnail.png" alt="Milligram - A minimalist CSS framework."></a>
+## Only put your changes in SRC folder
+Anything you put in SRC folder will be compiled into DIST folder
+
+### Starting the project
+Enter the command
+`npm start`
+
+### Restore dependencies
+Enter the command
+`npm i`
+
+### About the project
+It's a NodeJS project with Express framework
+It uses only Static files (html), nothing dynamic
+
+### NodeJS
+NodeJS installs server and NPM both together.
+You can post your own packages on NPM if you want.
+
+Here in this project, Bower is used. 
+
+## Package Managers
+Both frontend and backend has different Package Managers
+For backend: NPM (NodeJS)
+For frontend: Bower (HTML, CSS, JS etc)
+
+### Package Dependencies
+
+#### Frontend (`bower.json`)
+milligram
+typeit
+
+
+#### Backend (`packages.json`)
+bower: 
+^1.8.0, (to download frontend packages)
+express: 
+^4.13.3, (to run server, it's the main framework)
+browser-sync: 
+^2.18.2, (skip for now, i will setup later. after it's compiled, even browser automatically refreshes)
+ncp: 
+^2.0.0, (don't worry about it, just think of it as file copier)
+npm-run-all: 
+^3.1.2, (runs multiple commands, don't worry about it )
+onchange: 
+^3.2.0, (have to setup, it looks for changes in files. so u save changes and it's automatically compiled.)
+rimraf: 
+^2.5.4 (same like ncp. )
+
+Some of the packages like ncp rimraf etc are used as an alternative for Windows Linux cross-platform support.
+
+Like we can use the command 
+`cp -r ...` in Linux but not in Windows for example
+So NodeJS provides these packages through NPM so u just install them, and forget about support
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a align=center href=http://milligram.github.io><img width=100% src=https://milligram.github.io/images/thumbnail.png alt=Milligram - A minimalist CSS framework.></a>
 
 > A super simple boilerplate project with Milligram.
 
