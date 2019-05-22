@@ -1,4 +1,5 @@
 'use strict';
+$(document).ready(function(){
 $(window).on('scroll',function(){
 	if($(window).scrollTop()){
 		$('nav').addClass('black');
@@ -6,8 +7,8 @@ $(window).on('scroll',function(){
 	else{
 		$('nav').removeClass('black');
 	}
-})
-
+});
+});
 // console.info('Yeah!! Milligram is amazing.');
 
 new TypeIt('#homeTopTypeItElement', {
@@ -15,10 +16,10 @@ new TypeIt('#homeTopTypeItElement', {
 		speed: 100,
 		startDelay: 900
 	})
-	.type('Nayi')
+	.type('Entrepreneur')
 	.pause(1000)
 	.delete()
-	.type('Judge')
+	.type('Software Architect')
 	.pause(1000)
 	.go();
 
