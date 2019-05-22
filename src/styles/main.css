@@ -75,8 +75,9 @@ nav{
 	transition: .5s;
 }
 
-nav .black{
-	background:rgb(0,0,0,.6);
+.black{
+	background:black;
+	background-color:black;
 }
 
 nav ul{
